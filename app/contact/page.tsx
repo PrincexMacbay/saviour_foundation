@@ -22,7 +22,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    details: ["info@saviourfoundation.org", "partnerships@saviourfoundation.org"],
+    details: ["saviourfoundation1995@gmail.com", "partnerships@saviourfoundation.org"],
   },
   {
     icon: Phone,

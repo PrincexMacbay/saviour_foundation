@@ -84,8 +84,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-sm text-background/70">
                 <Mail className="h-4 w-4 shrink-0 text-secondary" />
-                <a href="mailto:info@saviourfoundation.org" className="hover:text-background">
-                  info@saviourfoundation.org
+                <a href="mailto:saviourfoundation1995@gmail.com" className="hover:text-background">
+                  saviourfoundation1995@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm text-background/70">
