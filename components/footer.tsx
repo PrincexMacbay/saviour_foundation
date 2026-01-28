@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, Phone, MapPin } from "lucide-react"
 
 const footerLinks = {
@@ -23,11 +24,22 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary">
-                <span className="text-lg font-bold text-secondary-foreground">SF</span>
-              </div>
-              <span className="text-xl font-semibold">Saviour Foundation</span>
+            <div className="flex items-center gap-0">
+              <Image
+                src="/images/image_logo.png"
+                alt="Saviour Foundation emblem"
+                width={40}
+                height={40}
+                className="h-10 w-10"
+              />
+              <Image
+                src="/images/text_logo.png"
+                alt="Saviour Foundation – The Hand That Makes Dream Reachable"
+                width={180}
+                height={40}
+                className="h-10 w-[140px]"
+              />
+              <span className="sr-only">Saviour Foundation</span>
             </div>
             <p className="mt-4 text-sm text-background/70">
               Empowering the next generation through education, scholarships, and academic excellence programs in Delta State, Nigeria.

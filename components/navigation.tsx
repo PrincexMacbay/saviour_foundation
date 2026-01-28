@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -21,13 +22,26 @@ export function Navigation() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-            <span className="text-lg font-bold text-primary-foreground">SF</span>
+        <Link href="/" className="flex items-center gap-0">
+          <div className="flex items-center gap-0">
+            <Image
+              src="/images/image_logo.png"
+              alt="Saviour Foundation emblem"
+              width={42}
+              height={42}
+              priority
+              className="h-[42px] w-[42px]"
+            />
+            <Image
+              src="/images/text_logo.png"
+              alt="Saviour Foundation – The Hand That Makes Dream Reachable"
+              width={140}
+              height={40}
+              priority
+              className="h-10 w-[120px]"
+            />
           </div>
-          <span className="hidden text-xl font-semibold text-foreground sm:block">
-            Saviour Foundation
-          </span>
+          <span className="sr-only">Saviour Foundation home</span>
         </Link>
 
         {/* Desktop Navigation */}

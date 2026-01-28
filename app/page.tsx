@@ -34,6 +34,8 @@ const stats = [
   { value: "50+", label: "Schools Reached" },
   { value: "100+", label: "Scholarships Awarded" },
   { value: "5", label: "Years of Impact" },
+  { value: "TBA", label: "Sponsorships" },
+  { value: "TBA", label: "Brands" },
 ]
 
 export default function HomePage() {
@@ -44,7 +46,7 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-foreground py-20 md:py-32">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(212,175,55,0.1),transparent_50%)]" />
+          <div className="absolute left-0 right-0 bottom-0 top-px bg-[radial-gradient(circle_at_30%_50%,rgba(212,175,55,0.1),transparent_50%)]" />
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div className="relative z-10">
@@ -135,9 +137,16 @@ export default function HomePage() {
         </section>
 
         {/* Stats Section */}
-        <section className="bg-primary py-16">
+        <section className="relative overflow-hidden bg-primary py-16">
+          {/* Corner label */}
+          <div className="pointer-events-none absolute left-0 top-0">
+            <div className="h-14 w-14 border-l-4 border-t-4 border-secondary/90" />
+          </div>
+          <div className="absolute left-4 top-4 inline-flex items-center rounded-br-xl rounded-tl-sm bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-secondary-foreground shadow-sm">
+            Goal for 2026
+          </div>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
                   <p className="text-4xl font-bold text-primary-foreground md:text-5xl">{stat.value}</p>
