@@ -33,7 +33,7 @@ const stats = [
   { value: "500+", label: "Students Supported" },
   { value: "50+", label: "Schools Reached" },
   { value: "100+", label: "Scholarships Awarded" },
-  { value: "5", label: "Years of Impact" },
+  { value: "1", label: "Year of Impact" },
   { value: "TBA", label: "Sponsorships" },
   { value: "TBA", label: "Brands" },
 ]
@@ -82,7 +82,7 @@ export default function HomePage() {
                 </div>
                 <div className="absolute -bottom-6 -left-6 rounded-xl bg-secondary p-4 shadow-lg">
                   <p className="text-3xl font-bold text-secondary-foreground">500+</p>
-                  <p className="text-sm text-secondary-foreground/80">Students Empowered</p>
+                  <p className="text-sm text-secondary-foreground/80">Emporing</p>
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function HomePage() {
                   <span className="text-balance">Inter-School Academic Competition 2026</span>
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground">
-                  Join us this March for our flagship event that brings together the brightest minds from primary and secondary schools across Delta State. Students compete in various academic disciplines for scholarships and prizes.
+                  Join us this May for our flagship event that brings together the brightest minds from primary and secondary schools across Delta State. Students compete in various academic disciplines for scholarships and prizes.
                 </p>
                 <ul className="mt-6 space-y-3">
                   <li className="flex items-center gap-2 text-foreground">

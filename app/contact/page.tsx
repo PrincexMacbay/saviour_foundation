@@ -22,12 +22,12 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    details: ["saviourfoundation1995@gmail.com", "partnerships@saviourfoundation.org"],
+    details: ["saviourfoundation1995@gmail.com"],
   },
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+234 800 000 0000", "+234 900 000 0000"],
+    details: ["+234 915 743 4271", "+234 915 743 4271"],
   },
   {
     icon: Clock,

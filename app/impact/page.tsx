@@ -17,7 +17,7 @@ const stats = [
   { value: "50+", label: "Schools Reached", description: "Educational institutions across Delta State" },
   { value: "100+", label: "Scholarships Awarded", description: "Financial support provided to students" },
   { value: "N5M+", label: "Total Investment", description: "Invested in educational empowerment" },
-  { value: "5", label: "Competitions Held", description: "Annual inter-school academic events" },
+  { value: "0", label: "Competitions Held", description: "First event May 2026" },
   { value: "1000+", label: "Books Distributed", description: "Educational materials provided" },
 ]
 
@@ -25,13 +25,13 @@ const testimonials = [
   {
     quote: "Saviour Foundation changed my life. The scholarship I received allowed me to continue my education when my family could not afford it. Today, I am pursuing my dreams.",
     name: "Blessing Okonkwo",
-    role: "2023 Scholarship Recipient",
+    role: "2026 Scholarship Recipient",
     school: "Government Secondary School, Warri",
   },
   {
     quote: "The academic competition was an incredible experience. It pushed me to study harder and believe in my abilities. Winning was just the beginning of my journey.",
     name: "Emmanuel Adigwe",
-    role: "2024 Competition Winner",
+    role: "2026 Competition Winner",
     school: "Unity Secondary School, Effurun",
   },
   {
@@ -51,7 +51,7 @@ const testimonials = [
 const successStories = [
   {
     title: "From Competition Winner to University Scholar",
-    description: "After winning our 2022 competition, this student received a full scholarship and is now studying Medicine at a top Nigerian university.",
+    description: "Our 2026 competition will award full scholarships; success stories will be shared here as students progress to university.",
     image: "/images/scholarship.jpg",
   },
   {
@@ -90,7 +90,10 @@ export default function ImpactPage() {
         <section className="py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12 text-center">
-              <span className="text-sm font-semibold uppercase tracking-wider text-primary">By The Numbers</span>
+              <span className="inline-block rounded-full bg-secondary px-4 py-2 text-sm font-bold uppercase tracking-wider text-secondary-foreground shadow-sm">
+                Goal for 2026
+              </span>
+              <span className="mt-3 block text-sm font-semibold uppercase tracking-wider text-primary">By The Numbers</span>
               <h2 className="mt-2 font-serif text-3xl font-bold text-foreground md:text-4xl">
                 <span className="text-balance">Impact at a Glance</span>
               </h2>

@@ -63,7 +63,7 @@ const programs = [
       "Leadership development activities",
       "Success story sharing from past beneficiaries",
     ],
-    image: "/images/founder.jpg",
+    image: "/images/photo_1_fegor.jpg",
   },
 ]
 

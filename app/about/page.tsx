@@ -32,29 +32,9 @@ const values = [
 
 const timeline = [
   {
-    year: "2021",
-    title: "Foundation Established",
-    description: "Saviour Foundation was founded in Warri, Delta State with a vision to transform education.",
-  },
-  {
-    year: "2022",
-    title: "First Competition",
-    description: "Launched our inaugural inter-school academic competition with 20 participating schools.",
-  },
-  {
-    year: "2023",
-    title: "Scholarship Program",
-    description: "Introduced comprehensive scholarship programs supporting students through secondary education.",
-  },
-  {
-    year: "2024",
-    title: "Expanded Reach",
-    description: "Extended programs to over 50 schools across Delta State, impacting hundreds of students.",
-  },
-  {
-    year: "2025",
-    title: "Continued Growth",
-    description: "Strengthened partnerships and launched new initiatives for educational materials support.",
+    year: "2026",
+    title: "Foundation established",
+    description: "Saviour Foundation launched in Warri, Delta State with a vision to transform education. First event: Inter-School Academic Competition in May.",
   },
 ]
 
@@ -133,16 +113,9 @@ export default function AboutPage() {
         {/* Founder Profile */}
         <section className="py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid items-center gap-12 lg:grid-cols-2">
-              <div className="relative mx-auto aspect-square max-w-md overflow-hidden rounded-2xl lg:order-2">
-                <Image
-                  src="/images/founder.jpg"
-                  alt="Queen OgheneFegor Macbay - Founder"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="lg:order-1">
+            <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+              {/* Text: left on desktop */}
+              <div className="order-2 lg:order-1">
                 <span className="text-sm font-semibold uppercase tracking-wider text-primary">Leadership</span>
                 <h2 className="mt-2 font-serif text-3xl font-bold text-foreground md:text-4xl">
                   Meet Our Founder
@@ -150,15 +123,27 @@ export default function AboutPage() {
                 <h3 className="mt-4 text-xl font-semibold text-secondary">Queen OgheneFegor Macbay</h3>
                 <div className="mt-4 space-y-4 text-muted-foreground">
                   <p>
-                    Queen OgheneFegor Macbay is the visionary founder of Saviour Foundation. Her passion for education and commitment to youth development led her to establish this organization with the goal of creating opportunities for academically gifted students.
+                    Queen OgheneFegor Macbay is a First Class graduate of International Law from Near East University, Turkish Republic of Northern Cyprus, with a strong interest in education, youth development, and community impact.
                   </p>
                   <p>
-                    Under her leadership, Saviour Foundation has grown from a local initiative to a recognized force for educational empowerment in Delta State. Her dedication to the cause has inspired countless students to pursue academic excellence.
+                    After completing her studies abroad, she returned to Nigeria with a clear conviction: that many young people are gradually losing access to opportunity, motivation, and the belief that education can truly change their lives. This reality, particularly within underserved communities, inspired the establishment of Saviour Foundation.
                   </p>
                   <p>
-                    &ldquo;Every child has potential. Our job is to help them discover it and provide the support they need to flourish,&rdquo; says Queen OgheneFegor Macbay.
+                    Queen founded Saviour Foundation as a platform dedicated to restoring the value of education, supporting academic excellence, and easing the burden on families through scholarships, mentorship, and student-focused programs. The Foundation&apos;s work is driven by the belief that education is a right, not a privilege, and that every child deserves the opportunity to become the best version of themselves.
+                  </p>
+                  <p>
+                    With a combination of legal training, international exposure, and grassroots commitment, Queen leads the Foundation with a focus on transparency, sustainability, and measurable impact. Her vision is to build a credible institution that begins in Delta State and expands across Nigeria and beyond, creating long-term solutions rather than temporary relief.
                   </p>
                 </div>
+              </div>
+              {/* Photo: right on desktop */}
+              <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl order-1 lg:order-2">
+                <Image
+                  src="/images/photo_1_fegor.jpg"
+                  alt="Queen OgheneFegor Macbay - Founder"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
@@ -168,9 +153,8 @@ export default function AboutPage() {
         <section className="bg-muted py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12 text-center">
-              <span className="text-sm font-semibold uppercase tracking-wider text-primary">Our Journey</span>
-              <h2 className="mt-2 font-serif text-3xl font-bold text-foreground md:text-4xl">
-                Milestones of Impact
+              <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl">
+                Foundation Calendar
               </h2>
             </div>
             <div className="relative mx-auto max-w-3xl">

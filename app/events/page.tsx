@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const upcomingEvent = {
   title: "Inter-School Academic Competition 2026",
-  date: "March 15-16, 2026",
+  date: "May 15-16, 2026",
   time: "9:00 AM - 4:00 PM",
   venue: "Warri Convention Center, Delta State",
   description: "Our flagship annual event brings together the brightest minds from primary and secondary schools across Delta State. Students compete in various academic disciplines for scholarships, cash prizes, and recognition.",
@@ -36,7 +36,7 @@ const upcomingEvent = {
 
 const eventSchedule = [
   {
-    day: "Day 1 - March 15",
+    day: "Day 1 - May 15",
     activities: [
       { time: "8:00 AM", activity: "Registration & Accreditation" },
       { time: "9:00 AM", activity: "Opening Ceremony" },
@@ -47,7 +47,7 @@ const eventSchedule = [
     ],
   },
   {
-    day: "Day 2 - March 16",
+    day: "Day 2 - May 16",
     activities: [
       { time: "9:00 AM", activity: "Semi-Final Rounds" },
       { time: "11:30 AM", activity: "Final Preparations" },
@@ -58,26 +58,7 @@ const eventSchedule = [
   },
 ]
 
-const pastEvents = [
-  {
-    title: "Inter-School Competition 2025",
-    date: "March 2025",
-    description: "45 schools participated, over 200 students competed.",
-    image: "/images/competition.jpg",
-  },
-  {
-    title: "Scholarship Awards Ceremony 2024",
-    date: "December 2024",
-    description: "30 students received scholarships and awards.",
-    image: "/images/scholarship.jpg",
-  },
-  {
-    title: "Educational Materials Distribution",
-    date: "September 2024",
-    description: "Books and supplies distributed to 15 schools.",
-    image: "/images/hero-students.jpg",
-  },
-]
+const pastEvents: { title: string; date: string; description: string; image: string }[] = []
 
 export default function EventsPage() {
   return (
@@ -278,23 +259,29 @@ export default function EventsPage() {
               </h2>
             </div>
             <div className="grid gap-8 md:grid-cols-3">
-              {pastEvents.map((event) => (
-                <Card key={event.title} className="overflow-hidden border-0 bg-card shadow-sm">
-                  <div className="relative aspect-[16/9]">
-                    <Image
-                      src={event.image || "/placeholder.svg"}
-                      alt={event.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <CardContent className="p-6">
-                    <p className="text-sm font-medium text-secondary">{event.date}</p>
-                    <h3 className="mt-1 text-lg font-semibold text-foreground">{event.title}</h3>
-                    <p className="mt-2 text-sm text-muted-foreground">{event.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
+              {pastEvents.length === 0 ? (
+                <p className="col-span-full text-center text-muted-foreground">
+                  We launched in 2026. Our first event is the Inter-School Academic Competition in May. Past events will appear here after our events take place.
+                </p>
+              ) : (
+                pastEvents.map((event) => (
+                  <Card key={event.title} className="overflow-hidden border-0 bg-card shadow-sm">
+                    <div className="relative aspect-[16/9]">
+                      <Image
+                        src={event.image || "/placeholder.svg"}
+                        alt={event.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <CardContent className="p-6">
+                      <p className="text-sm font-medium text-secondary">{event.date}</p>
+                      <h3 className="mt-1 text-lg font-semibold text-foreground">{event.title}</h3>
+                      <p className="mt-2 text-sm text-muted-foreground">{event.description}</p>
+                    </CardContent>
+                  </Card>
+                ))
+              )}
             </div>
           </div>
         </section>
