@@ -12,12 +12,16 @@ export const metadata: Metadata = {
   description: 'Saviour Foundation identifies and rewards academically outstanding primary and secondary school students in Warri, Delta State through scholarships, competitions, and educational support.',
   keywords: ['education', 'scholarships', 'Nigeria', 'Delta State', 'Warri', 'academic competition', 'NGO', 'foundation'],
   authors: [{ name: 'Saviour Foundation' }],
+  icons: {
+    icon: '/images/image_logo.png',
+    apple: '/images/image_logo.png',
+  },
   openGraph: {
     title: 'Saviour Foundation | Empowering Education',
     description: 'Rewarding academic excellence in Delta State, Nigeria',
     type: 'website',
   },
-    generator: 'v0.app'
+  generator: 'v0.app',
 }
 
 export const viewport: Viewport = {
