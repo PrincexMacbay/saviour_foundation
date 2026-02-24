@@ -4,7 +4,6 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Quote } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -19,33 +18,6 @@ const stats = [
   { value: "N5M+", label: "Total Investment", description: "Invested in educational empowerment" },
   { value: "0", label: "Competitions Held", description: "First event May 2026" },
   { value: "1000+", label: "Books Distributed", description: "Educational materials provided" },
-]
-
-const testimonials = [
-  {
-    quote: "Saviour Foundation changed my life. The scholarship I received allowed me to continue my education when my family could not afford it. Today, I am pursuing my dreams.",
-    name: "Blessing Okonkwo",
-    role: "2026 Scholarship Recipient",
-    school: "Government Secondary School, Warri",
-  },
-  {
-    quote: "The academic competition was an incredible experience. It pushed me to study harder and believe in my abilities. Winning was just the beginning of my journey.",
-    name: "Emmanuel Adigwe",
-    role: "2026 Competition Winner",
-    school: "Unity Secondary School, Effurun",
-  },
-  {
-    quote: "As a school administrator, I have seen how Saviour Foundation motivates our students. The recognition they receive inspires the entire school to strive for excellence.",
-    name: "Mrs. Gladys Ofurhie",
-    role: "School Principal",
-    school: "Delta State Model School",
-  },
-  {
-    quote: "The textbooks and learning materials we received made a significant difference. Many of our students now have resources they could not have accessed otherwise.",
-    name: "Mr. Augustine Efe",
-    role: "Head Teacher",
-    school: "St. Michael Primary School, Warri",
-  },
 ]
 
 const successStories = [
@@ -142,29 +114,20 @@ export default function ImpactPage() {
           </div>
         </section>
 
-        {/* Testimonials */}
+        {/* Voices of Impact – coming after our first programs */}
         <section className="py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-12 text-center">
-              <span className="text-sm font-semibold uppercase tracking-wider text-primary">Testimonials</span>
-              <h2 className="mt-2 font-serif text-3xl font-bold text-foreground md:text-4xl">
+            <div className="mx-auto max-w-2xl rounded-2xl border border-border bg-muted/50 px-8 py-12 text-center">
+              <span className="text-sm font-semibold uppercase tracking-wider text-primary">Stories to Come</span>
+              <h2 className="mt-2 font-serif text-2xl font-bold text-foreground md:text-3xl">
                 <span className="text-balance">Voices of Impact</span>
               </h2>
-            </div>
-            <div className="grid gap-6 md:grid-cols-2">
-              {testimonials.map((testimonial) => (
-                <Card key={testimonial.name} className="border border-border bg-card">
-                  <CardContent className="p-8">
-                    <Quote className="mb-4 h-8 w-8 text-secondary" />
-                    <p className="mb-6 text-foreground italic">&ldquo;{testimonial.quote}&rdquo;</p>
-                    <div>
-                      <p className="font-semibold text-foreground">{testimonial.name}</p>
-                      <p className="text-sm text-secondary">{testimonial.role}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.school}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+              <p className="mt-4 text-muted-foreground">
+                We launched in 2026. After our first programs—including the Inter-School Academic Competition in May—we&apos;ll share stories from students, schools, and partners here. Stay tuned.
+              </p>
+              <Button asChild className="mt-6">
+                <Link href="/contact">Get in touch</Link>
+              </Button>
             </div>
           </div>
         </section>
